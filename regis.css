@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Poppins_Regular";
+    src: url('./fonts/Poppins-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins_Bold";
+    src: url('./fonts/Poppins-Bold.ttf') format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Poppins_Regular";
+}
+
+.container{
+    background-color: white;
+    width: 750px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.logincontainer{
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.reg-link{
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    width: 30%;
+}
+
+.reg-link li{
+    list-style: none;
+    margin: 60px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.text{
+    font-size: 18px;
+    width: 300px;
+}
+
+.container h2{
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.name1{
+    border-radius: 0;
+    border: 1px solid grey;
+    width: 35%;
+}
+
+.name1:hover{
+    background-color: #fafafa;
+}
+
+.name1:focus{
+    border: 1px solid blue;
+}
+
+.dob, .category, .gen, .matric, .inter, .pass, .verify, .buttons{
+    padding: 5px 0px 5px;
+}
+
+.unireg, .address, .email{
+    padding: 15px 0px 5px;
+}
+
+.faddress{
+    width: 50%;
+}
+
+.qua{
+    border-radius: 0;
+    border: 1px solid grey;
+    width: 50%;
+}
+
+i{
+    font-size: 16px;
+    color: blue;
+}
+
+.submitb{
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    height: 30px;
+    align-items: center;
+    width: 45%;
+    cursor: pointer;
+}
+.submitb:hover{
+    background-color: green;
+}
+
+.loginbtn{
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    height: 30px;
+    align-items: center;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.resetb{
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+    height: 30px;
+    align-items: center;
+    width: 45%;
+    cursor: pointer;
+}
+.resetb:hover{
+    background-color: red;
+}
+
+.download-button{
+    width: 40px;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 720px;
+    justify-content: center;
+    align-items: center;
+}
+
+.download{
+    background-color: blue;
+    color: white;
+}
+
+.photo{
+    margin-left: 150px;
+}
+
+.pro-photo{
+    width: 150px;
+    height: 150px;
+}
+
+.sign-photo{
+    width: 150px;
+    height: 75px;
+}
+
+.in-line{
+    display: flex;
+    position: absolute;
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 100%;
+    }
+
+    .reg-link{
+        width: 100%;
+    }
+    
+    .list{
+        flex-direction: column;
+    }
+}

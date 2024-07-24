@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCCL</title>
+    <link rel="icon" href="images/BCCL logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="regis.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <h2>Create an account</h2>
+        <div class="form-container">
+            <form action="signup.php" method="post">
+                <div class="name">
+                    <label for="name">Name :</label>
+                    <input type="text" placeholder="First Name" class="name1" name="firstName" required>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="text" placeholder="Last Name" class="name1" name="lastName" required>
+                    <br>
+                    <br>
+                </div>
+                <div class="gen">
+                    <label for="gender">Gender :</label>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female" required> Female
+                    <input type="radio" name="gender" value="Other" required> Other
+                    <br>
+                    <br>
+                </div>
+                <div class="dob">
+                    <label for="dob">Date of birth :</label>
+                    <input type="date" class="name1" name="dob" required>
+                    <br>
+                </div>
+                <div class="email">
+                    <label for="email">Email :</label>
+                    <input type="email" placeholder="Email" class="name1" name="email" required>
+                    <br>
+                    <br>
+                </div>
+                <div class="phno">
+                    <label for="phno">Phone Number :</label>
+                    <input type="tel" class="name1" name="phno" required>
+                    <br><br>
+                </div>
+                <div class="pass">
+                    <label for="pass">Create Password :</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="name1" id="password" name="password" required>
+                    <br><br>
+                    <label for="pass">Confirm Password :</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="name1" id="confirmpassword" required>
+                    <br>
+                 </div>
+                <div class="verify">
+                    <input type="checkbox" required>I verify that all information stated above is true.
+                    <br><br>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="submitb" onclick="checkPassword()">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

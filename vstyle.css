@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    background-color: #f2f2f2;
+}
+
+.container{
+    background-color: white;
+    width: 500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+#number, #otp{
+    width: calc(100%-25px);
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+#recaptcha-container{
+    margin-bottom: 5px;
+}
+
+#send, #verify{
+    color: white;
+    font-size: 16px;
+    background-color: blueviolet;
+    margin: 0 90px;
+    width: 20%;
+    height: 30px;
+    outline: none;
+}
+
+.p-conf, .n-conf{
+    width: calc(100%-22px);
+    border: 2px solid green;
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin: 4px 0px;
+    background-color: rgba(0, 249, 12, 0.5);
+    display: none;
+}
+
+.n-conf{
+    border-color: red;
+    background-color: rgba(255, 0, 4, 0.5);
+}
+
+.verifier{
+    display: none;
+}
+
+.register{
+    margin-top: 20px;
+    display: none;
+}
+
+.regis{
+    color: white;
+    font-size: 16px;
+    background-color: blueviolet;
+    margin: 0 90px;
+    width: 20%;
+    height: 30px;
+    outline: none;
+}
